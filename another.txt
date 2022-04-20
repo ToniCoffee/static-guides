@@ -1,2 +1,0 @@
-"text from another branch" 
-"plus plus plus" 

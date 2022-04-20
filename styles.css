@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: unset;
+}
+
+body {
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  border-bottom: 1px solid #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+  color: #555;
+  font-size: min(1em, 2.75vw);
+}
+
+header *:hover {
+  /* border: 1px solid red; */
+  cursor: pointer;
+}
+
+header h1{
+  padding: .25em;
+}
+
+header label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  /* padding: .1em .5em .3em .5em; */
+  width: 30px;
+  height: 30px;
+  border: 1px solid #aaa;
+  background-color: #777;
+  color: #eee;
+}
+
+header input {
+  display: none;
+}
+
+header input:checked ~ label {
+}
