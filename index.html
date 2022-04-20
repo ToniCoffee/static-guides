@@ -26,8 +26,10 @@
         <li><a href="#delete-branch">Delete branch</a></li>
         <li><a href="#switch-to-branch">Switch to branch</a></li>
         <li><a href="#create-and-switch-branch">Create and switch branch in one step</a></li>
+        <li><a href="#merge-branch">Merge branch</a></li>
         <li><a href="#show-commits">Show commits</a></li>
         <li><a href="#discard-changes">Discard changes</a></li>
+        <li><a href="#discard-stages">Discard stages</a></li>
         <li><a href="#other-commands">Other commands</a></li>
       </ul>
     </nav>
@@ -166,6 +168,16 @@
           </code>
         </figure>
       </article>
+      <article class="app-card" id="merge-branch">
+        <h2>Merge branch</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git merge origin &lt;branch-to-merge&gt;</p><br />
+          </code>
+        </figure>
+      </article>
       <article class="app-card" id="show-commits">
         <h2>Show commits</h2>
         <figure class="app-code">
@@ -173,6 +185,38 @@
           <br />
           <code contenteditable spellcheck="false">
             <p>&gt; git log</p><br />
+          </code>
+        </figure>
+        <p>or</p>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git log --graph</p><br />
+          </code>
+        </figure>
+        <p>or</p>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git log --oneline</p><br />
+          </code>
+        </figure>
+        <p>or</p>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git log --graph --oneline</p><br />
+          </code>
+        </figure>
+        <p>or</p>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git log --graph --pretty=oneline|short|medium|full|fuller|reference|email|mboxrd|raw</p><br />
           </code>
         </figure>
       </article>
@@ -186,13 +230,24 @@
           </code>
         </figure>
       </article>
+      <article class="app-card" id="discard-stages">
+        <h2>Discard stages</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git restore --staged &lt;filename.extension&gt;</p><br />
+          </code>
+        </figure>
+      </article>
       <article class="app-card" id="other-commands">
         <h2>Other commands</h2>
         <figure class="app-code">
           <figcaption>Command line (cmd)</figcaption>
           <br />
           <code contenteditable spellcheck="false">
-            <p>&gt; git fetch</p><br />
+            <p>&gt; git show</p><br />
+            <p>&gt; git fetch origin &lt;branch-to-fetch&gt;</p><br />
             <p>&gt; git pull</p><br />
             <p>&gt; git add &lt;filename.extension&gt;</p><br />
             <p>&gt; git rm &lt;filename.extension&gt;</p><br />
