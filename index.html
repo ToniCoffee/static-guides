@@ -14,10 +14,10 @@
     <label class="app-header-btn" for="cbox-btn">|||</label>
     <nav class="app-menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
+        <li><a href="#initialize-project">Home</a></li>
+        <li><a href="#initialize-project">Initialize project</a></li>
+        <li><a href="#check-status">Check status</a></li>
+        <li><a href="#check-branch">Check branch</a></li>
         <li><a href="#">Home</a></li>
         <li><a href="#">Home</a></li>
         <li><a href="#">Home</a></li>
@@ -27,8 +27,121 @@
 
   <main class="wrapper">
     <section>
-      <article>
+      <article class="app-card" id="initialize-project">
         <h2>Initialize git proyect</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git init</p><br />
+            <p>&gt; git add .</p><br />
+            <p>&gt; git commit -m "your commit message"</p><br />
+            <p>&gt; git remote add origin https://github.com/user_name/project_name.git</p><br />
+            <p>&gt; git branch -M main</p><br />
+            <p>&gt; git push -u origin main</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="initialize-project">
+        <h2>Push to project</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git push -u origin &lt;branch-name&gt;</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="check-status">
+        <h2>Check status</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git status</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="check-branch">
+        <h2>Check branch</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git branch</p><br />
+          </code>
+        </figure>
+        <p>or</p>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git branch -a</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="check-branch">
+        <h2>Create new branch</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git branch &lt;new-branch-name&gt;</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="check-branch">
+        <h2>Delete branch</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git branch -d &lt;branch-name&gt;</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="check-branch">
+        <h2>Switch to branch</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git switch &lt;branch-name&gt;</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="check-branch">
+        <h2>Create and switch branch in one step</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git checkout -b &lt;new-branch-name&gt;</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="check-branch">
+        <h2>Show commits</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git log</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="check-branch">
+        <h2>Other commands</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git fetch</p><br />
+            <p>&gt; git pull</p><br />
+            <p>&gt; git add &lt;filename.extension&gt;</p><br />
+            <p>&gt; git rm &lt;filename.extension&gt;</p><br />
+          </code>
+        </figure>
       </article>
     </section>
   </main>
