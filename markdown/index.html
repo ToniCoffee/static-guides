@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../common.css">
+  <title>GIT GUIDE</title>
+</head>
+<body>
+  <header class="wrapper">
+    <h1 class="app-header-title">Markdown GUIDE</h1>
+    <input type="checkbox" name="cbox-btn" id="cbox-btn" />
+    <label class="app-header-btn" for="cbox-btn">|||</label>
+    <nav class="app-menu">
+      <ul>
+        <li><a href="#headings">Home</a></li>
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#new-line">New line</a></li>
+        <li><a href="#bold-text">Bold text</a></li>
+        <li><a href="#italic-text">Italic text</a></li>
+        <li><a href="#bold-italic-text">Bold and italic text</a></li>
+        <li><a href="#blockquotes">Blockquotes</a></li>
+        <li><a href="#blockquote-multiple-paragraphs">Blockquotes with multiple paragraphs</a></li>
+        <li><a href="#nested-blockquotes">Nested blockquotes</a></li>
+        <li><a href="#ordered-list">Ordered list</a></li>
+        <li><a href="#unordered-list">Unordered list</a></li>
+        <li><a href="#code-blocks">Code blocks</a></li>
+        <li><a href="#images">Images</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="wrapper">
+    <section>
+      <article class="app-card" id="headings">
+        <h2>Headings</h2>
+        <figure class="app-code">
+          <figcaption>Markdown</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; # This is a h1</p><br />
+            <p>&gt; ## This is a h2</p><br />
+            <p>&gt; ### This is a h3</p><br />
+            <p>&gt; #### This is a h4</p><br />
+            <p>&gt; ##### This is a h5</p><br />
+            <p>&gt; ###### This is a h6</p><br />
+          </code>
+        </figure>
+        <p><b>"Note":</b> Use empty line before and after each heading for compatibility reason.</p>
+      </article>
+      <article class="app-card" id="new-line">
+        <h2>New line</h2>
+        <figure class="app-code">
+          <figcaption>Markdown</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; Use two or more spaces an press enter for create a new line</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="bold-text">
+        <h2>Bold text</h2>
+        <figure class="app-code">
+          <figcaption>Markdown</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; This is a **bold text**</p><br />
+            <p>&gt; This is a __bold text__</p><br />
+          </code>
+        </figure>
+        <p><b>"Note":</b> Use doble asterisks for compatibility reason.</p>
+      </article>
+      <article class="app-card" id="italic-text">
+        <h2>Italic text</h2>
+        <figure class="app-code">
+          <figcaption>Markdown</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; This is a *italic text*</p><br />
+            <p>&gt; This is a _italic text_</p><br />
+          </code>
+        </figure>
+        <p><b>"Note":</b> Use one asterisk for compatibility reason.</p>
+      </article>
+      <article class="app-card" id="bold-italic-text">
+        <h2>Bold and italic text</h2>
+        <figure class="app-code">
+          <figcaption>Markdown</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; This is a ***bold and italic text***</p><br />
+            <p>&gt; This is a ___bold and italic text___</p><br />
+            <p>&gt; This is a __*bold and italic text*__</p><br />
+            <p>&gt; This is a **_bold and italic text_**</p><br />
+          </code>
+        </figure>
+        <p><b>"Note":</b> Use three asterisks for compatibility reason.</p>
+      </article>
+      <article class="app-card" id="blockquotes">
+        <h2>Blockquotes</h2>
+        <figure class="app-code">
+          <figcaption>Markdown</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; Use "&gt;" symbol to make text blockquote</p><br />
+            <p>Example:</p><br />
+            <p>&gt; This is a blockquote paragraph</p>
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="blockquote-multiple-paragraphs">
+        <h2>Blockquote with multiple paragraphs</h2>
+        <figure class="app-code">
+          <figcaption>Markdown</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; Add "&gt;" on the blank lines between the paragraphs</p><br /><br />
+            <p>Example:</p><br />
+            <p>&gt; This is a blockquote paragraph</p><br />
+            <p>&gt; </p><br />
+            <p>&gt; This is a other blockquote paragraph</p>
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="nested-blockquotes">
+        <h2>Nested blockquotes</h2>
+        <figure class="app-code">
+          <figcaption>Markdown</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; Add "&gt;&gt;"  in front of the paragraph you want to nest</p><br /><br />
+            <p>Example:</p><br />
+            <p>&gt; This is a blockquote paragraph</p><br />
+            <p>&gt; </p><br />
+            <p>&gt;&gt; This is a nested blockquote paragraph</p>
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="ordered-list">
+        <h2>Ordered list</h2>
+        <figure class="app-code">
+          <figcaption>Markdown</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; Add line items with numbers followed by periods</p><br /><br />
+            <p>Example:</p><br />
+            <p>1. First item</p><br />
+            <p>2. Second item</p><br />
+            <p>3. Third item</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="unordered-list">
+        <h2>Unordered list</h2>
+        <figure class="app-code">
+          <figcaption>Markdown</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; add dashes (-), asterisks (*), or plus signs (+) in front of line items. Indent one or more items to create a nested list</p><br /><br />
+            <p>Example:</p><br />
+            <p>- First item &nbsp;&nbsp;&nbsp;* First item &nbsp;&nbsp;&nbsp;+ First item</p><br />
+            <p>- Second item  &nbsp;&nbsp;* Second item &nbsp;&nbsp;+ Second item</p><br />
+            <p>- Third item &nbsp;&nbsp;&nbsp;* Third item &nbsp;&nbsp;&nbsp;+ Third item</p><br /><br />
+            <p>&gt; To start an unordered list item with a number, use backslash (\) to escape the period</p><br /><br />
+            <p>Example:</p><br />
+            <p>- 1968\. A great year!</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="code-blocks">
+        <h2>Code blocks</h2>
+        <figure class="app-code">
+          <figcaption>Markdown</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; Use two tabs or eight spaces</p><br /><br />
+            <p>Example:</p><br />
+            <pre>
+              &lt;html&gt;<br />
+                &lt;head&gt;<br />
+                  &lt;title&gt;Test&lt;/title&gt;<br />
+                &lt;/head&gt;<br />
+              &lt;/html&gt;<br />
+            </pre>
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="images">
+        <h2>Images</h2>
+        <figure class="app-code">
+          <figcaption>Markdown</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; ![Text for not found image](url to image)</p><br /><br />
+            <p>Example:</p><br /><br />
+            <p>![Tux, the Linux mascot](/assets/images/tux.png)</p><br /><br />
+          </code>
+        </figure>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
