@@ -97,14 +97,16 @@ header *:hover {
   left: -100%;
   font-weight: bold;
   /* font-size: 0rem; */
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px); */
+  background-color: #fff;
   transition: .25s;
 }
 
 .app-menu > ul {
   display: flex;
   flex-direction: column;
-  font-size: .8rem;
+  /* font-size: .8rem; */
+  font-size: min(.8em, 2.25vw);
 }
 
 .app-menu > ul li {
