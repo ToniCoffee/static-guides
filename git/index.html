@@ -25,6 +25,7 @@
         <li><a href="#check-branch">Check branch</a></li>
         <li><a href="#create-new-branch">Create new branch</a></li>
         <li><a href="#delete-branch">Delete branch</a></li>
+        <li><a href="#delete-branch-remote">Delete branch remotely</a></li>
         <li><a href="#switch-to-branch">Switch to branch</a></li>
         <li><a href="#create-and-switch-branch">Create and switch branch in one step</a></li>
         <li><a href="#fetch-branch">Fetch branch</a></li>
@@ -35,6 +36,7 @@
         <li><a href="#discard-stages">Discard stages</a></li>
         <li><a href="#show-remote">Show remote repository</a></li>
         <li><a href="#set-remote">Set/Change remote repository</a></li>
+        <li><a href="#prune-remote">Prune remote repository</a></li>
         <li><a href="#other-commands">Other commands</a></li>
       </ul>
     </nav>
@@ -45,8 +47,7 @@
       <article class="app-card" id="initialize-project">
         <h2>Initialize git proyect</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git init</p><br />
             <p>&gt; git add .</p><br />
@@ -60,16 +61,14 @@
       <article class="app-card" id="add-changes">
         <h2>Add changes</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git add &lt;filename.extension&gt;</p><br />
           </code>
         </figure>
-        <p>or</p>
+        <p>or</p><br />
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git add .</p><br />
           </code>
@@ -78,16 +77,14 @@
       <article class="app-card" id="remove-changes">
         <h2>Remove changes</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git rm &lt;filename.extension&gt;</p><br />
           </code>
         </figure>
-        <p>or</p>
+        <p>or</p><br />
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git rm .</p><br />
           </code>
@@ -96,8 +93,7 @@
       <article class="app-card" id="commit-changes">
         <h2>Commit changes</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git commit -m "your commit message"</p><br />
           </code>
@@ -106,8 +102,7 @@
       <article class="app-card" id="add-commit-changes">
         <h2>Add and Commit changes in one step</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git commit -am "your commit message"</p><br />
           </code>
@@ -116,8 +111,7 @@
       <article class="app-card" id="push-to-project">
         <h2>Push to project</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git push -u origin &lt;branch-name&gt;</p><br />
           </code>
@@ -126,8 +120,7 @@
       <article class="app-card" id="check-status">
         <h2>Check status</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git status</p><br />
           </code>
@@ -136,16 +129,14 @@
       <article class="app-card" id="check-branch">
         <h2>Check branch</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git branch</p><br />
           </code>
         </figure>
-        <p>or</p>
+        <p>or</p><br />
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git branch -a</p><br />
           </code>
@@ -154,8 +145,7 @@
       <article class="app-card" id="create-new-branch">
         <h2>Create new branch</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git branch &lt;new-branch-name&gt;</p><br />
           </code>
@@ -164,18 +154,43 @@
       <article class="app-card" id="delete-branch">
         <h2>Delete branch</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git branch -d &lt;branch-name&gt;</p><br />
+          </code>
+        </figure>
+        <p>or make this for force delete</p><br />
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption><br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git branch -D &lt;branch-name&gt;</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="delete-branch-remote">
+        <h2>Delete branch remotely</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption><br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git push &lt;remote&gt; --delete &lt;branch-to-remove&gt;</p><br /><br />
+            <p>Example:</p><br /><br />
+            <p>&gt; git push origin --delete test</p>
+          </code>
+        </figure>
+        <p>or use shorter command</p><br />
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption><br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git push &lt;remote&gt; :&lt;branch-to-remove&gt;</p><br /><br />
+            <p>Example:</p><br /><br />
+            <p>&gt; git push origin :test</p>
           </code>
         </figure>
       </article>
       <article class="app-card" id="switch-to-branch">
         <h2>Switch to branch</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git switch &lt;branch-name&gt;</p><br />
           </code>
@@ -184,8 +199,7 @@
       <article class="app-card" id="create-and-switch-branch">
         <h2>Create and switch branch in one step</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git checkout -b &lt;new-branch-name&gt;</p><br />
           </code>
@@ -194,8 +208,7 @@
       <article class="app-card" id="fetch-branch">
         <h2>Fetch branch</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git fetch origin &lt;branch-to-fetch&gt;</p><br />
           </code>
@@ -204,8 +217,7 @@
       <article class="app-card" id="merge-branch">
         <h2>Merge branch</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git merge origin &lt;branch-to-merge&gt;</p><br />
           </code>
@@ -214,8 +226,7 @@
       <article class="app-card" id="pull-branch">
         <h2>Pull branch, (fetch and merge in one step)</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git pull origin &lt;branch-to-pull&gt;</p><br />
           </code>
@@ -224,40 +235,35 @@
       <article class="app-card" id="show-commits">
         <h2>Show commits</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git log</p><br />
           </code>
         </figure>
-        <p>or</p>
+        <p>or</p><br />
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git log --graph</p><br />
           </code>
         </figure>
-        <p>or</p>
+        <p>or</p><br />
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git log --oneline</p><br />
           </code>
         </figure>
-        <p>or</p>
+        <p>or</p><br />
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git log --graph --oneline</p><br />
           </code>
         </figure>
-        <p>or</p>
+        <p>or</p><br />
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git log --graph --pretty=oneline|short|medium|full|fuller|reference|email|mboxrd|raw</p><br />
           </code>
@@ -266,8 +272,7 @@
       <article class="app-card" id="discard-changes">
         <h2>Discard changes</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git restore &lt;filename.extension&gt;</p><br />
           </code>
@@ -276,8 +281,7 @@
       <article class="app-card" id="discard-stages">
         <h2>Discard stages</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git restore --staged &lt;filename.extension&gt;</p><br />
           </code>
@@ -286,8 +290,7 @@
       <article class="app-card" id="show-remote">
         <h2>Show remote repository</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git remote -v</p><br />
           </code>
@@ -296,20 +299,28 @@
       <article class="app-card" id="set-remote">
         <h2>Set/Change remote repository</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git remote set-url origin &lt;url-to-repository&gt;</p><br /><br />
             <p>Example:</p><br /><br />
-            <p>&gt; git remote set-url origin  https://github.com/ToniCoffee/test.git</p><br /><br />
+            <p>&gt; git remote set-url origin  https://github.com/ToniCoffee/test.git</p><br />
           </code>
         </figure>
+      </article>
+      <article class="app-card" id="prune-remote">
+        <h2>Prune remote repository</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption><br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git remote prune origin </p><br />
+          </code>
+        </figure>
+        <p>"Note": This command remove all remotes lost references</p>
       </article>
       <article class="app-card" id="other-commands">
         <h2>Other commands</h2>
         <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
+          <figcaption>Command line (cmd)</figcaption><br />
           <code contenteditable spellcheck="false">
             <p>&gt; git show</p><br />
           </code>
