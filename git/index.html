@@ -17,6 +17,7 @@
         <li><a href="#initialize-project">Home</a></li>
         <li><a href="#initialize-project">Initialize project</a></li>
         <li><a href="#add-changes">Add changes</a></li>
+        <li><a href="#remove-changes">Remove changes</a></li>
         <li><a href="#commit-changes">Commit changes</a></li>
         <li><a href="#add-commit-changes">Add and commit changes in one step</a></li>
         <li><a href="#push-to-project">Push to project</a></li>
@@ -28,13 +29,13 @@
         <li><a href="#create-and-switch-branch">Create and switch branch in one step</a></li>
         <li><a href="#fetch-branch">Fetch branch</a></li>
         <li><a href="#merge-branch">Merge branch</a></li>
+        <li><a href="#pull-branch">Pull branch, (fecth and merge in one step)</a></li>
         <li><a href="#show-commits">Show commits</a></li>
         <li><a href="#discard-changes">Discard changes</a></li>
         <li><a href="#discard-stages">Discard stages</a></li>
         <li><a href="#show-remote">Show remote repository</a></li>
         <li><a href="#set-remote">Set/Change remote repository</a></li>
         <li><a href="#other-commands">Other commands</a></li>
-        <li><a href="#for-delete">For delete</a></li>
       </ul>
     </nav>
   </header>
@@ -74,6 +75,24 @@
           </code>
         </figure>
       </article>
+      <article class="app-card" id="remove-changes">
+        <h2>Remove changes</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git rm &lt;filename.extension&gt;</p><br />
+          </code>
+        </figure>
+        <p>or</p>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git rm .</p><br />
+          </code>
+        </figure>
+      </article>
       <article class="app-card" id="commit-changes">
         <h2>Commit changes</h2>
         <figure class="app-code">
@@ -84,7 +103,7 @@
           </code>
         </figure>
       </article>
-      <article class="app-card" id="commit-changes">
+      <article class="app-card" id="add-commit-changes">
         <h2>Add and Commit changes in one step</h2>
         <figure class="app-code">
           <figcaption>Command line (cmd)</figcaption>
@@ -178,7 +197,7 @@
           <figcaption>Command line (cmd)</figcaption>
           <br />
           <code contenteditable spellcheck="false">
-            <p>&gt; git fetch origin &lt;branch-to-merge&gt;</p><br />
+            <p>&gt; git fetch origin &lt;branch-to-fetch&gt;</p><br />
           </code>
         </figure>
       </article>
@@ -189,6 +208,16 @@
           <br />
           <code contenteditable spellcheck="false">
             <p>&gt; git merge origin &lt;branch-to-merge&gt;</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="pull-branch">
+        <h2>Pull branch, (fetch and merge in one step)</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git pull origin &lt;branch-to-pull&gt;</p><br />
           </code>
         </figure>
       </article>
@@ -283,20 +312,6 @@
           <br />
           <code contenteditable spellcheck="false">
             <p>&gt; git show</p><br />
-            <p>&gt; git fetch origin &lt;branch-to-fetch&gt;</p><br />
-            <p>&gt; git pull</p><br />
-            <p>&gt; git add &lt;filename.extension&gt;</p><br />
-            <p>&gt; git rm &lt;filename.extension&gt;</p><br />
-          </code>
-        </figure>
-      </article>
-      <article class="app-card" id="for-delete">
-        <h2>For delete</h2>
-        <figure class="app-code">
-          <figcaption>Command line (cmd)</figcaption>
-          <br />
-          <code contenteditable spellcheck="false">
-            <p>&gt; This will be deleted</p><br />
           </code>
         </figure>
       </article>

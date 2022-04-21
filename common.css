@@ -43,7 +43,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5em 1em;
+  padding: 0 1em;
+  height: 50px;
   position: fixed;
   top: 0;
 }
@@ -93,6 +94,8 @@ header *:hover {
   font-weight: bold;
   background-color: #fff;
   transition: .25s;
+  max-height: calc(100vh - 50px);
+  overflow-y: auto;
 }
 
 .app-menu > ul {
@@ -128,8 +131,9 @@ main {
 }
 
 .app-card > p {
-  padding: 1em 0;
+  padding: 1em 0 0 0;
   color: var(--headings-color);
+  font-size: min(.9em, 3vw);
 }
 
 .app-code {
