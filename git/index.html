@@ -30,6 +30,8 @@
         <li><a href="#show-commits">Show commits</a></li>
         <li><a href="#discard-changes">Discard changes</a></li>
         <li><a href="#discard-stages">Discard stages</a></li>
+        <li><a href="#show-remote">Show remote repository</a></li>
+        <li><a href="#set-remote">Set/Change remote repository</a></li>
         <li><a href="#other-commands">Other commands</a></li>
       </ul>
     </nav>
@@ -237,6 +239,28 @@
           <br />
           <code contenteditable spellcheck="false">
             <p>&gt; git restore --staged &lt;filename.extension&gt;</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="show-remote">
+        <h2>Show remote repository</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git remote -v</p><br />
+          </code>
+        </figure>
+      </article>
+      <article class="app-card" id="set-remote">
+        <h2>Set/Change remote repository</h2>
+        <figure class="app-code">
+          <figcaption>Command line (cmd)</figcaption>
+          <br />
+          <code contenteditable spellcheck="false">
+            <p>&gt; git remote set-url origin &lt;url-to-repository&gt;</p><br /><br />
+            <p>Example:</p><br /><br />
+            <p>&gt; git remote set-url origin  https://github.com/ToniCoffee/test.git</p><br /><br />
           </code>
         </figure>
       </article>
